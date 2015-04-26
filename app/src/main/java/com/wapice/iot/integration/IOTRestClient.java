@@ -18,11 +18,9 @@ public class IOTRestClient {
      *
      * @param userName
      * @param password
-     * @return
      */
-    public static IOTAPIClient createInstance(String userName, String password) {
+    public static void createInstance(String userName, String password) {
         client = new IOTAPIClient(defaultUrl, userName, password);
-        return client;
     }
 
     /**
